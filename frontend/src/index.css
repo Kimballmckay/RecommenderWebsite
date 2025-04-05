@@ -1,0 +1,74 @@
+:root {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: #213547;
+  background-color: #f5f7fa;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 2.2em;
+  line-height: 1.1;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    color: rgba(255, 255, 255, 0.87);
+    background-color: #1a1a1a;
+  }
+
+  .header,
+  .content-selector,
+  .recommendation-list-container {
+    background-color: #242424;
+    color: rgba(255, 255, 255, 0.87);
+  }
+
+  .recommendation-placeholder,
+  .recommendation-item {
+    background-color: #333;
+    color: rgba(255, 255, 255, 0.87);
+  }
+
+  .recommendation-item:hover {
+    background-color: #444;
+  }
+
+  .content-selector select,
+  .content-selector button:disabled {
+    background-color: #333;
+    color: rgba(255, 255, 255, 0.87);
+    border-color: #555;
+  }
+
+  .header h1,
+  .content-selector h2,
+  .recommendation-list-container h2 {
+    color: #61dafb;
+  }
+
+  .recommendation-rank {
+    color: #61dafb;
+  }
+
+  .recommendation-score {
+    color: #aaa;
+  }
+}
